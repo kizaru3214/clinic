@@ -1,11 +1,11 @@
 <?php
     include '../db.php';
-    if($_SERVER [REQUEST_METHOD] == "POST"){
+    if($_SERVER ["REQUEST_METHOD"] == "POST"){
         $fname = $_POST['patFName'];
         $lname = $_POST['patLName'];
         $bdate = $_POST['patBDate'];
-        $telno = $_POST['parTelNo'];
-        mysqli_query($conn, "INSERT INTO patient (patFName, patLName, patBDate, parTelNo) VALUES ('$fname','$lname','$bdate','$telno')");
+        $telno = $_POST['patTelNo'];
+        mysqli_query($conn, "INSERT INTO patient (patFName, patLName, patBDate, patTelNo) VALUES ('$fname','$lname','$bdate','$telno')");
         header ("Location: view.php");
 
     }

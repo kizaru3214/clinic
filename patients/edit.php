@@ -29,11 +29,12 @@
         <input type = "text" name = "patLName" value = "<?= $pat['patLName'] ?>" required><br><br>
 
         <label>Birth Date: </label>
-        <input type = "text" name = "patBDat" value = "<?=  $pat['patBDate'] ?>" required><br><br>
+        <input type = "text" name = "patBDate" value = "<?=  $pat['patBDate'] ?>" required><br><br>
 
         <label>Telephone Number: </label>
-        <input type = "Text" name = "patTelNo" value = "<?=  $pat['patTelNo'] ?> required"><br><br>
+        <input type = "Text" name = "patTelNo" value = "<?=  $pat['patTelNo'] ?>" required><br><br>
+        <input type = "submit" value = "Save">
     </form>
-    <br><a href = ""
+    <br><a href = "view.php">Back</a>
 </body>
 </html>
